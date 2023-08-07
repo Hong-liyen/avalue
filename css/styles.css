@@ -704,6 +704,7 @@ section{
     display: none;
   }
   .applications .title_mb{
+    width: 100%;
     display: block;
   }
   .applications .title_mb h1{
@@ -748,6 +749,10 @@ section{
 @media only screen and (max-width: 767px) {
   .about span{
     display: none;
+  }
+  .catalog h1, .contactus h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
   }
 }
 
