@@ -48,7 +48,9 @@ section{
   border-radius: 10px;
   opacity: 1;
 }
-
+.swiper-button-prev{
+  opacity: .35;
+}
 /*header*/
 .header .scroll_logo{
   display: none;
@@ -233,10 +235,6 @@ section{
   width: 50px;
   height: 18px;
   background: url(../images/next.png) no-repeat center center;
-}
-.applications .swiper-button-next .applications.swiper-button-disabled, 
-.applications .swiper-button-prev, .applications.swiper-button-disabled{
-  opacity: .35;
 }
 /* //applications */
 /* features */
