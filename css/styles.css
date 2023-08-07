@@ -759,8 +759,9 @@ section{
   }
   .title_mb h1{
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 0;
+    z-index: 2;
   }
 }
 
