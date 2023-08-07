@@ -2,25 +2,6 @@
 
 $(document).ready(function () {
 
-	var swiper = new Swiper('.swiper-container', {
-		speed:1000,
-		loop:true,
-		autoplay: {
-			delay: 5000,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-        	clickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		mousewheel: {
-			releaseOnEdges: true,
-		},
-	});
-
 	$('.applications').bind('DOMMouseScroll mousewheel', function(e){
 		if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
 			var total = $(".dp_item").length;
@@ -134,5 +115,41 @@ $(document).ready(function () {
 		$.each($('.dp_item'), function (index, dp_item) {
 			$(dp_item).attr('data-position', index + 1);
 		});
+	});
+
+	var swiper = new Swiper('.banner .swiper-container, .features .swiper-container, .contactus .swiper-container', {
+		speed:3500,
+		loop: true,
+		autoplay: {
+			delay: 0,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+        	clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		mousewheel: {
+			releaseOnEdges: true,
+		},
+	});
+
+	var swiper = new Swiper('.applications .swiper-container', {
+		speed:3500,
+		loop: true,
+		autoplay: false,
+		pagination: {
+			el: '.swiper-pagination',
+        	clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		mousewheel: {
+			releaseOnEdges: true,
+		},
 	});
 });
