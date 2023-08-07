@@ -571,6 +571,10 @@ section{
   .more{
     display: none;
   }
+  .applications #dp-slider,
+  .applications .dp-img img {
+    height: 500px;
+  }
 }
 
 /*===============================================================================================
@@ -727,10 +731,7 @@ section{
   .applications .title_mb img{
     width: 80%; 
   }
-  .applications #dp-slider,
-  .applications .dp-img img {
-    height: 350px;
-  }
+
   .applications .swiper-button-prev{
     position: absolute;
     top: 80px;
@@ -782,7 +783,10 @@ section{
   .contactus img{
     padding: 5% 10% 10%;
   }
-
+  .applications #dp-slider,
+  .applications .dp-img img {
+    height: 350px;
+  }
 }
 
 @-webkit-keyframes marquee{
