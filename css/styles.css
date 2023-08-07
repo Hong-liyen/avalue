@@ -754,5 +754,13 @@ section{
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
   }
+  .title_mb{
+    position: relative;
+  }
+  .title_mb h1{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
