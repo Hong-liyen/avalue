@@ -399,23 +399,35 @@ section{
   width: 50px;
 }
 /*//goTop*/
-/* scrollDown */
-.scrollDown{
+/* icon-scroll */
+.icon-scroll {
   position: fixed;
-  left: 30px;
-  bottom: 20%;
-  z-index: 18;
-  color: #FFF;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
+  top: 50%;
+  left: 1%;
+  z-index: 1;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
-.scrollDown .line{
-  margin-top: 13vh;
+.scroll_line{
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+.scroll_line:after {
+  content: "";
+  display: block;
   width: 1px;
-  height: 150px;
-  background-color: #fff;
+  height: 70px;
+  margin: 16px auto 0;
+  -webkit-animation: marquee 1.5s ease 1s infinite normal none;
+  animation: marquee 1.5s ease 1s infinite normal none;
+  background: #fff;
 }
-/* //scrollDown */
+/* //icon-scroll */
+
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1220px;
@@ -482,11 +494,11 @@ section{
     align-items: center;
     width: 85%;
     margin: 0 auto;
-    padding: 25px 0;
+    height: 80px;
   }
 
   .scroll .row_top {
-    height: 100px;
+    height: 80px;
   }
 
   .menu_top_left {
@@ -587,7 +599,7 @@ section{
   .row_top {
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     padding: 0 15px;
@@ -718,7 +730,7 @@ section{
   }
   .applications #dp-slider,
   .applications .dp-img img {
-    height: 500px;
+    height: 350px;
   }
   .applications .swiper-button-prev{
     position: absolute;
@@ -768,5 +780,39 @@ section{
   .contactus .swiper-container p{
     font-size: 1em;
   }
+  .contactus img{
+    padding: 5% 10% 10%;
+  }
+
 }
 
+@-webkit-keyframes marquee{
+  0%{
+    height:0;
+    background:#000
+  }
+  40%{
+    height:70px;
+    -webkit-transform:translateY(0)
+  }
+  100%{
+    height:70px;
+    background:#000;
+    -webkit-transform:translateY(70px)
+  }
+}
+@keyframes marquee{
+  0%{
+    height:0;
+    background:#fff;
+  }
+  40%{
+    height:70px;
+    transform:translateY(0);
+  }
+  100%{
+      height:70px;
+      background:#fff;
+      -webkit-transform:translateY(70px);
+  }
+}
