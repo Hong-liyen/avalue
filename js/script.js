@@ -13,7 +13,7 @@ $(document).ready(function () {
 			$(".applications .swiper-wrapper_pc .swiper-slide_mb:last-child").hide().prependTo(".swiper-wrapper_mb").fadeIn();
 			$.each($('.swiper-slide_mb'), function (index, swiper_slide) {
 				$(swiper_slide).attr('data-title', index + 1);
-			});		
+			});
 		}
 		else{
 			var total = $(".dp_item").length;
@@ -27,6 +27,7 @@ $(document).ready(function () {
 			$.each($('.swiper-slide_mb'), function (index, swiper_slide) {
 				$(swiper_slide).attr('data-title', index + 1);
 			});	
+			$('.swiper-button-prev').css('opacity', '1');		
 		}
 	});
 
@@ -42,7 +43,7 @@ $(document).ready(function () {
 			$(".applications .swiper-wrapper_pc .swiper-slide_mb:last-child").hide().prependTo(".swiper-wrapper_mb").fadeIn();
 			$.each($('.swiper-slide_mb'), function (index, swiper_slide) {
 				$(swiper_slide).attr('data-title', index + 1);
-			});		
+			});
 		}
 		else{
 			var total = $(".swiper-slide_pc").length;
@@ -56,6 +57,7 @@ $(document).ready(function () {
 			$.each($('.swiper-slide_mb'), function (index, swiper_slide) {
 				$(swiper_slide).attr('data-title', index + 1);
 			});	
+			$('.swiper-button-prev').css('opacity', '1');		
 		}
 	});
 
@@ -94,6 +96,7 @@ $(document).ready(function () {
 
 
 	$(".swiper-button-next").click(function(){
+		$('.swiper-button-prev').css('opacity', '1');
 		var total = $(".dp_item").length;
 		$("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
 		$.each($('.dp_item'), function (index, dp_item) {
@@ -135,18 +138,18 @@ $(document).ready(function () {
 			releaseOnEdges: true,
 		},
 	});
-
-	var swiper = new Swiper('.applications .swiper-container', {
+	
+	var swiper2 = new Swiper('.applications .swiper-container', {
 		speed:3500,
 		loop: true,
-		autoplay: false,
+		autoplay:false,
 		pagination: {
-			el: '.swiper-pagination',
+			el: '.applications .swiper-pagination',
         	clickable: true,
 		},
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.applications .swiper-button-next',
+			prevEl: '.applications .swiper-button-prev',
 		},
 		mousewheel: {
 			releaseOnEdges: true,
