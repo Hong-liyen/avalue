@@ -744,6 +744,15 @@ section{
   .applications p{
     margin-top: 15vh;
   }
+  .title_mb{
+    position: relative;
+  }
+  .title_mb h1{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    z-index: 2;
+  }
   /* //applications */
 }
 @media only screen and (max-width: 767px) {
@@ -753,15 +762,6 @@ section{
   .catalog h1, .contactus h2{
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
-  }
-  .title_mb{
-    position: relative;
-  }
-  .title_mb h1{
-    position: absolute;
-    top: -10px;
-    right: 0;
-    z-index: 2;
   }
 }
 
