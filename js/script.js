@@ -1,7 +1,6 @@
 /*global $,document,window */
 
 $(document).ready(function () {
-	new WOW().init();
 
 	var swiper = new Swiper('.swiper-container', {
 		speed:1000,
@@ -87,12 +86,12 @@ $(document).ready(function () {
 		}else{
 			$('body').removeClass('scroll');
 		}
-		if(scrollTop>800){
+		if(scrollTop>250){
 			$('.goTop').show();
-			$('.scrollDown').hide();
+			$('.icon-scroll').hide();
 		}else{
 			$('.goTop').hide();
-			$('.scrollDown').show();
+			$('.icon-scroll').show();
 		}
 	});
 
