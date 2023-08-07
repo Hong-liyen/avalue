@@ -308,6 +308,7 @@ section{
   padding: 10vh 0 5vh;
   min-height: 150vh;
 }
+
 .contactus  .swiper-container{
   position: relative;
   padding-bottom: 15em;
@@ -339,6 +340,7 @@ section{
   padding-top: 10em;
   padding-left: 1em;
   border-left: 1px solid #707070;
+  font-size: 1.2em;
 }
 .map, .mail{
   display: flex;
@@ -762,6 +764,9 @@ section{
   .catalog h1, .contactus h2{
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
+  }
+  .contactus .swiper-container p{
+    font-size: 1em;
   }
 }
 
