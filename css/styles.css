@@ -46,6 +46,7 @@ section{
 
 .swiper-pagination-bullet{
   border-radius: 10px;
+  opacity: 1;
 }
 
 /*header*/
@@ -93,7 +94,7 @@ section{
 
 .banner .swiper-pagination-bullet {
   background: rgba(155,155,155,.48);
-  opacity: 1;
+  /* opacity: 1; */
   margin: 0 8px !important;
 }
 
@@ -295,7 +296,7 @@ section{
   width: 12px;
   height: 12px;
 }
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active {
   width: 48px;
   height: 12px;
 }
@@ -333,7 +334,7 @@ section{
 }
 .contactus .swiper-pagination-bullet{
   background: rgba(155,155,155,.48);
-  opacity: 1;
+  /* opacity: 1; */
   margin: 8px 0 !important;
 }
 .contactus .swiper-container p{
