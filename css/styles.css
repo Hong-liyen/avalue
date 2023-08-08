@@ -191,18 +191,21 @@ section{
   height: 738px;
 }
 .applications .prd_right{
-  margin-top: 18vh;
+  margin-top: 6vh;
 }
 
 .applications .swiper-container{
   position: relative;
+}
+.applications .title_pc img{
+  width: 25em;
 }
 .applications .title_pc h1{
   position: absolute;
   top: 20px;
   right: 75px;
   color: rgba(0, 0, 0, .13);
-  font-size: 5em;
+  font-size: 4em;
 }
 .applications .title_pc{
   display: flex;
@@ -218,7 +221,7 @@ section{
 }
 .applications .swiper-button-prev{
   position: absolute;
-  top: 150px;
+  top: 125px;
   right: 120px;
   left: auto;
   color: transparent;
@@ -228,7 +231,7 @@ section{
 }
 .applications .swiper-button-next{
   position: absolute;
-  top: 150px;
+  top: 125px;
   right: 60px;
   left: auto;
   color: transparent;
@@ -729,7 +732,7 @@ section{
     font-size: 3em;
   }
   .applications .title_mb img{
-    width: 80%; 
+    width: 22em; 
   }
 
   .applications .swiper-button-prev{
@@ -753,7 +756,7 @@ section{
     background: url(../images/next.png) no-repeat center center;
   }
   .applications .prd_right{
-    margin-top: 10vh;
+    margin-top: 4vh;
   }
   .applications p{
     margin-top: 15vh;
