@@ -73,7 +73,6 @@ $(document).ready(function () {
 				$(dp_item).attr('data-position', index + 1);
 			});
 			
-			console.log(123)
 		}
 		else{
 			var total = $("#ap-slider .swiper-slide_pc").length;
@@ -92,7 +91,6 @@ $(document).ready(function () {
 				$(swiper_slide).attr('data-position', index + 1);
 			});	
 			$('.swiper-button-prev').css('opacity', '1');
-			console.log(456)		
 		}
 	});
 
