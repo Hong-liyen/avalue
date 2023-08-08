@@ -140,7 +140,7 @@ $(document).ready(function () {
 	});
 	
 	var swiper2 = new Swiper('.applications .swiper-container', {
-		speed:3500,
+		speed:1000,
 		loop: true,
 		autoplay:false,
 		pagination: {
