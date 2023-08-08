@@ -89,5 +89,9 @@ $(document).ready(function () {
 		$.each($('.dp_item'), function (index, dp_item) {
 			$(dp_item).attr('data-position', index + 1);
 		});
-	});				
+	});
+			
+	$(".applications").bind("mousewheel", function() {
+		return false;
+	});		
 });
