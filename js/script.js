@@ -23,9 +23,6 @@ $(document).ready(function () {
 	var swiper2 = new Swiper('.applications .swiper-container', {
 		speed:1000,
 		loop: true,
-		autoplay: {
-			delay: 5000,
-		},
 		pagination: {
 			el: '.applications .swiper-pagination',
         	clickable: true,
@@ -34,9 +31,6 @@ $(document).ready(function () {
 			nextEl: '.applications .swiper-button-next',
 			prevEl: '.applications .swiper-button-prev',
 		},
-		mousewheel: {
-			releaseOnEdges: false,
-		}
 	});
 
 	$(window).scroll(function(){
