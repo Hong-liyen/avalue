@@ -244,7 +244,7 @@ section{
 .features{
   padding: 30vh 0 10vh;
   color: #fff;
-  background: url(../images/fea_bg.png) #000 top center / cover no-repeat;
+  background: url(../images/fea_bg.jpg) #000 top center / cover no-repeat;
 }
 .fea_txt_pc h2{
   color: #A4D4FF;
@@ -342,7 +342,6 @@ section{
   padding-top: 10em;
   padding-left: 1em;
   border-left: 1px solid #707070;
-  font-size: 1.2em;
 }
 .map, .mail{
   display: flex;
@@ -780,9 +779,6 @@ section{
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
   }
-  .contactus .swiper-container p{
-    font-size: 1em;
-  }
   .contactus img{
     padding: 5% 10% 10%;
   }
@@ -791,7 +787,11 @@ section{
     height: 350px;
   }
 }
-
+@media only screen and (max-width: 480px) {
+  .contactus .swiper-wrapper{
+    margin-bottom: 4.6em;
+  }
+}
 @-webkit-keyframes marquee{
   0%{
     height:0;
