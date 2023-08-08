@@ -17,7 +17,7 @@ $(document).ready(function () {
 		},
 		mousewheel: {
 			releaseOnEdges: true,
-		},
+		}
 	});
 	
 	var swiper2 = new Swiper('.applications .swiper-container', {
@@ -34,6 +34,9 @@ $(document).ready(function () {
 			nextEl: '.applications .swiper-button-next',
 			prevEl: '.applications .swiper-button-prev',
 		},
+		mousewheel: {
+			releaseOnEdges: false,
+		}
 	});
 
 	$(window).scroll(function(){
