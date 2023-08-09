@@ -31,7 +31,10 @@ $(document).ready(function () {
 			nextEl: '.applications .swiper-button-next',
 			prevEl: '.applications .swiper-button-prev',
 		},
-		preventLinksPropagation: false,
+		touchRatio: 0,
+		simulateTouch: false,
+		followFinger: false,
+		moveStartThreshold: false
 	});
 
 	$(window).scroll(function(){
