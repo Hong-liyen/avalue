@@ -428,7 +428,11 @@ section{
   background: #fff;
 }
 /* //icon-scroll */
-
+@media only screen and (min-width: 1440px) {
+  .contactus .swiper-container {
+    padding-bottom: 25em;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1220px;
@@ -785,6 +789,9 @@ section{
   .applications #dp-slider,
   .applications .dp-img img {
     height: 350px;
+  }
+  .applications .title_mb h1{
+    display: none;
   }
 }
 @media only screen and (max-width: 480px) {
