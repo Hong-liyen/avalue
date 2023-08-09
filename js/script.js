@@ -31,6 +31,7 @@ $(document).ready(function () {
 			nextEl: '.applications .swiper-button-next',
 			prevEl: '.applications .swiper-button-prev',
 		},
+		preventLinksPropagation: false,
 	});
 
 	$(window).scroll(function(){
