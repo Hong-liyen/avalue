@@ -51,6 +51,10 @@ section{
 .swiper-button-prev{
   opacity: .35;
 }
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+  width: 50px;
+  height: 18px;
+}
 /*header*/
 .header .scroll_logo{
   display: none;
