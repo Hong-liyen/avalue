@@ -258,30 +258,16 @@ section{
   font-size: 2em;
 }
 .fea_edit{
-  padding-left: 25px;
   line-height: 35px;
 }
 
-.fea_list:last-child{
-  border-left: 1px solid rgba(255,255,255,.65);
-}
-
-.fea_txt_pc{
-  display: flex;
-  align-items: flex-start;
-  min-height: 100vh;
-}
 .fea_txt_mb{
   display: none;
 }
-.fea_list:last-child{
-  display: flex;
-  align-items: flex-end;
-  min-height: 110vh;
-}
+
 .features .swiper-pagination{
-  bottom: 0;
-  text-align: right;
+  bottom: 30%;
+  left: 0;
 }
 
 .features .swiper-wrapper{
@@ -531,7 +517,6 @@ section{
   }
 
   /*//header*/
-
   .features .container, .contactus .container{
     max-width: 88%;
   }
@@ -554,9 +539,6 @@ section{
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
-  .fea_list:last-child{
-    min-height: 150vh;
-  }
   .applications .title_pc{
     width: 70%;
   }
@@ -642,10 +624,6 @@ section{
     flex-direction: column;
   }
   /* features */
-  .fea_list:last-child{
-    border-left: none;
-    min-height: auto;
-  }
   .features .swiper-container, .contactus .swiper-pagination{
     display: none;
   }
@@ -665,6 +643,9 @@ section{
   }
   .more:hover{
     color: #fff;
+  }
+  .col-wrapper{
+    clear: both;
   }
   .col-wrapper > .contain {
     max-height: 0;
@@ -698,7 +679,7 @@ section{
     text-align: center;
   }
   .contactus .swiper-container{
-    padding-bottom: 0;
+    padding-bottom: 3em;
   }
   .footer {
     display: flex;
@@ -793,12 +774,40 @@ section{
   .applications .title_mb h1{
     display: none;
   }
+  .contactus .swiper-container{
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .contactus .info{
+    padding-top: 2.5em;
+  }
+  .contactus .info > div{
+    justify-content: space-around;
+  }
 }
 @media only screen and (max-width: 480px) {
   .contactus .swiper-wrapper{
     margin-bottom: 4.6em;
   }
 }
+@media only screen and (max-width: 375px) {
+  .contactus .swiper-container{
+    padding-bottom: 1.8em;
+  }
+  .catalog h1, .contactus h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+  }
+  .map a, .mail a{
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  .contactus .swiper-container {
+    padding-bottom: 2.8em;
+  }
+}
+
 @-webkit-keyframes marquee{
   0%{
     height:0;
