@@ -1,7 +1,7 @@
 /*global $,document,window */
 
 $(document).ready(function () {
-	var swiper = new Swiper('.banner .swiper-container, .features .swiper-container, .contactus .swiper-container', {
+	var swiper = new Swiper('.features .swiper-container, .contactus .swiper-container', {
 		speed:1000,
 		loop: true,
 		autoplay: {
@@ -20,7 +20,23 @@ $(document).ready(function () {
 		}
 	});
 	
-	var swiper2 = new Swiper('.applications .swiper-container', {
+	var swiper2 = new Swiper('.banner .swiper-container', {
+		speed:1000,
+		loop: true,
+		autoplay: {
+			delay: 5000,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+        	clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}
+	});
+
+	var swiper3 = new Swiper('.applications .swiper-container', {
 		speed:350,
 		loop: true,
 		pagination: {
