@@ -327,6 +327,14 @@ section{
 .contactus .swiper-container .list{
   padding-top: 10em;
 }
+.contactus li{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.contactus li img{
+  margin-top: 6px;
+}
 .map, .mail{
   display: flex;
   flex-direction: column;
