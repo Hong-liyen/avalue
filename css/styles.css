@@ -324,10 +324,8 @@ section{
   /* opacity: 1; */
   margin: 8px 0 !important;
 }
-.contactus .swiper-container p{
+.contactus .swiper-container .list{
   padding-top: 10em;
-  padding-left: 1em;
-  border-left: 1px solid #707070;
 }
 .map, .mail{
   display: flex;
@@ -764,7 +762,7 @@ section{
     font-family: 'Raleway', sans-serif;
     font-size: 3em;
   }
-  .contactus img{
+  .contactus .img{
     padding: 5% 10% 10%;
   }
   .applications #dp-slider,
